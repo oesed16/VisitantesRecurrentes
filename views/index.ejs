@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visitantes Recurrentes</title>
+</head>
+
+<body>
+    <table align="center" style="text-align:center">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Nro de Visitas</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% for (let i = 0; i < visitors.length; i++) { %>
+            <tr>
+                <td><%= visitors[i].id%></td>
+                <td><%= visitors[i].name%></td>
+                <td><%= visitors[i].count%></td>
+            </tr>
+            <% } %>
+        </tbody>
+    </table>
+</body>
+
+</html>
